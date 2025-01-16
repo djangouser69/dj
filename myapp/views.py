@@ -54,4 +54,4 @@ class Gh(View):
 
 
 def newview(r):
-    return render(r, "new.html")
+    return render(r, "app/new.html")
