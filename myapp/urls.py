@@ -9,4 +9,5 @@ urlpatterns = [
     path("plot/", views.plot, name="plot"),
     path("gh/", views.Gh.as_view(), name="gh"),
     path("new/", views.newview, name="new"),
+    path("pull/", views.pull, name="pull"),
 ]
