@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django App</title>
+    <style>
+      nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: baseline;
+        padding: 2rem;
+        border: 1px solid black;
+        a {
+          font-size: 1.2rem;
+          font-weight: 450;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="{% url 'index' %}">home</a>
+      <a href="/class/">about</a>
+      <a href="{% url 'test' %}">test</a>
+      <a href="{% url 'stuff' %}">stuff</a>
+      <a href="{% url 'plot' %}">plot</a>
+    </nav>
+    {% block main %}
+      <h1>Hello World!</h1>
+    {% endblock %}
+  </body>
+</html>
