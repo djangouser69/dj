@@ -51,3 +51,7 @@ def plot(r):
 class Gh(View):
     def get(s, r):
         return render(r, "app/gh.html")
+
+
+def newview(r):
+    return render(r, "new.html")
