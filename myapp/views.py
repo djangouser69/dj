@@ -46,3 +46,8 @@ def plot(r):
         for x, y in zip(names, plots)
     }
     return render(r, "app/plot.html", context)
+
+
+class Gh(View):
+    def get(s, r):
+        return render(r, "app/gh.html")
