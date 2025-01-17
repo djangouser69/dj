@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+  <style>
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  </style>
+
+  <a href="/exp"><h1>Full Html</h1></a>
+  <main>{{ a|safe }}
+    {{ b|safe }}
+    {{ c|safe }}
+    {{ d|safe }}</main>
+{% endblock %}

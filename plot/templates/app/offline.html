@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+  {% comment %}Place styles above plots{% endcomment %}
+  <style>
+    .class {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+    }
+  </style>
+
+  <a href="/exp/2"><h1>Offline</h1></a>
+  <div class="class">{{ a|safe }}
+    {{ b|safe }}
+    {{ c|safe }}
+    {{ d|safe }}</div>
+{% endblock %}
